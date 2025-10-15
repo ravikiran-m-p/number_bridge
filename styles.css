@@ -15,3 +15,10 @@ body {
   border-radius: 10px;
   background-color: #111;
 }
+.title {
+  text-align: center;
+  color: #d4af37;
+  margin: 0;
+  font-size: 24px;
+  letter-spacing: 1px;
+}
