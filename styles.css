@@ -8,3 +8,10 @@ body {
   justify-content: center;
   height: 100vh;
 }
+.panel {
+  width: 340px;
+  padding: 24px;
+  border: 1px solid #bfa14a;
+  border-radius: 10px;
+  background-color: #111;
+}
