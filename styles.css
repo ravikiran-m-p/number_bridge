@@ -35,3 +35,18 @@ body {
   flex-direction: column;
   margin-bottom: 14px;
 }
+
+
+.field_input {
+  padding: 8px;
+  border: 1px solid #bfa14a;
+  border-radius: 6px;
+  background-color: #0a0a0a;
+  color: #f4e9c6;
+  font-size: 15px;
+}
+
+.field_input:focus {
+  outline: none;
+  border-color: #e6c755;
+}
