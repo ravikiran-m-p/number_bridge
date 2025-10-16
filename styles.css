@@ -22,3 +22,16 @@ body {
   font-size: 24px;
   letter-spacing: 1px;
 }
+
+.subtitle {
+  text-align: center;
+  color: #bfa14a;
+  font-size: 12px;
+  margin: 6px 0 18px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 14px;
+}
