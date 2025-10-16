@@ -29,6 +29,19 @@ body {
   font-size: 12px;
   margin: 6px 0 18px;
 }
+.clear_button {
+  background-color: #d4af37;
+  color: #0a0a0a;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.clear_button:hover {
+  background-color: #e6c755;
+}
 
 .field {
   display: flex;
