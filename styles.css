@@ -88,3 +88,22 @@ body {
   outline: none;
   border-color: #e6c755;
 }
+
+
+.hint {
+  height: 14px;
+  font-size: 11px;
+  color: #d4af37;
+  margin-top: 3px;
+}
+
+.hint.error {
+  color: #ff6666;
+}
+
+.foot {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
