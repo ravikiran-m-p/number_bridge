@@ -9,3 +9,5 @@ const hint_octal   = document.getElementById('hint_octal');
 const hint_hex     = document.getElementById('hint_hex');
 
 const button_clear = document.getElementById('button_clear');
+
+let is_updating = false;
