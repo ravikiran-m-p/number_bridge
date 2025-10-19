@@ -47,9 +47,26 @@ function bigint_to_base_string(value_bigint, base)
   return sign + s;
 }
 
-function clear_hints() {
+function clear_hints() 
+{
   set_hint(hint_decimal, '');
   set_hint(hint_binary, '');
   set_hint(hint_octal, '');
   set_hint(hint_hex, '');
+}
+
+function update_all_from_decimal(decimal_str) 
+{
+  try 
+  {
+    const value_bigint = parse_to_bigint(decimal_str, 10);
+    input_binary.value = bigint_to_base_string(value_bigint, 2);
+    input_octal.value  = bigint_to_base_string(value_bigint, 8);
+    input_hex.value    = bigint_to_base_string(value_bigint, 16);
+    clear_hints();
+  } 
+  catch (e) 
+  {
+    set_hint(hint_decimal, 'invalid decimal', true);
+  }
 }
