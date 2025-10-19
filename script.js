@@ -20,6 +20,15 @@ const re_hex     = /^-?[0-9a-fA-F]+$/;
 function set_hint(element, message, is_error = false)
 {
   element.textContent = message || '';
-  if (is_error) element.classList.add('error');
-  else element.classList.remove('error');
+  if (is_error)
+    element.classList.add('error');
+  else 
+    element.classList.remove('error');
+}
+
+function parse_to_bigint(value_str, base)
+{
+  const sign = value_str[0] === '-' ? -1n : 1n;
+  const trimmed = (value_str[0] === '+' || value_str[0] === '-') ? value_str.slice(1) : value_str;
+  return sign * BigInt(parseInt(trimmed, base));
 }
