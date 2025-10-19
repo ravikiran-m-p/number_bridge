@@ -46,3 +46,10 @@ function bigint_to_base_string(value_bigint, base)
     s = s.toUpperCase();
   return sign + s;
 }
+
+function clear_hints() {
+  set_hint(hint_decimal, '');
+  set_hint(hint_binary, '');
+  set_hint(hint_octal, '');
+  set_hint(hint_hex, '');
+}
