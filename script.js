@@ -32,3 +32,17 @@ function parse_to_bigint(value_str, base)
   const trimmed = (value_str[0] === '+' || value_str[0] === '-') ? value_str.slice(1) : value_str;
   return sign * BigInt(parseInt(trimmed, base));
 }
+
+function bigint_to_base_string(value_bigint, base)
+{
+  if (value_bigint === 0n)
+    return '0';
+  const sign = value_bigint < 0n ? '-' : '';
+  let v = value_bigint < 0n ? -value_bigint : value_bigint;
+  if (base === 10) 
+    return sign + v.toString();
+  let s = v.toString(base);
+  if (base === 16) 
+    s = s.toUpperCase();
+  return sign + s;
+}
