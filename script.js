@@ -16,3 +16,10 @@ const re_decimal = /^-?\d+$/;
 const re_binary  = /^-?[01]+$/;
 const re_octal   = /^-?[0-7]+$/;
 const re_hex     = /^-?[0-9a-fA-F]+$/;
+
+function set_hint(element, message, is_error = false)
+{
+  element.textContent = message || '';
+  if (is_error) element.classList.add('error');
+  else element.classList.remove('error');
+}
