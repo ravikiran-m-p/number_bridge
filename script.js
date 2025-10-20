@@ -70,3 +70,14 @@ function update_all_from_decimal(decimal_str)
     set_hint(hint_decimal, 'invalid decimal', true);
   }
 }
+function update_all_from_binary(binary_str) {
+  try {
+    const value_bigint = parse_to_bigint(binary_str, 2);
+    input_decimal.value = bigint_to_base_string(value_bigint, 10);
+    input_octal.value   = bigint_to_base_string(value_bigint, 8);
+    input_hex.value     = bigint_to_base_string(value_bigint, 16);
+    clear_hints();
+  } catch (e) {
+    set_hint(hint_binary, 'invalid binary', true);
+  }
+}
