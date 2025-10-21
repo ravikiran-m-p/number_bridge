@@ -84,3 +84,17 @@ function update_all_from_binary(binary_str)
     set_hint(hint_binary, 'invalid binary', true);
   }
 }
+
+function update_all_from_octal(octal_str)
+{
+  try
+  {
+    const value_bigint = parse_to_bigint(octal_str, 8);
+    input_decimal.value = bigint_to_base_string(value_bigint, 10);
+    clear_hints();
+  }
+  catch (e)
+  {
+    set_hint(hint_octal, 'invalid octal', true);
+  }
+}
