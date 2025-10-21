@@ -91,6 +91,8 @@ function update_all_from_octal(octal_str)
   {
     const value_bigint = parse_to_bigint(octal_str, 8);
     input_decimal.value = bigint_to_base_string(value_bigint, 10);
+    input_binary.value  = bigint_to_base_string(value_bigint, 2);
+    input_hex.value     = bigint_to_base_string(value_bigint, 16);
     clear_hints();
   }
   catch (e)
