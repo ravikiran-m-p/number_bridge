@@ -106,10 +106,13 @@ function update_all_from_hex(hex_str)
   try
   {
     const value_bigint = parse_to_bigint(hex_str, 16);
+    input_decimal.value = bigint_to_base_string(value_bigint, 10);
+    input_binary.value  = bigint_to_base_string(value_bigint, 2);
     input_octal.value   = bigint_to_base_string(value_bigint, 8);
     clear_hints();
   }
-  catch (e){
+  catch (e)
+  {
     set_hint(hint_hex, 'invalid hex', true);
   }
 }
