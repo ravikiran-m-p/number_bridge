@@ -100,3 +100,16 @@ function update_all_from_octal(octal_str)
     set_hint(hint_octal, 'invalid octal', true);
   }
 }
+
+function update_all_from_hex(hex_str)
+{
+  try
+  {
+    const value_bigint = parse_to_bigint(hex_str, 16);
+    input_octal.value   = bigint_to_base_string(value_bigint, 8);
+    clear_hints();
+  }
+  catch (e){
+    set_hint(hint_hex, 'invalid hex', true);
+  }
+}
