@@ -116,3 +116,23 @@ function update_all_from_hex(hex_str)
     set_hint(hint_hex, 'invalid hex', true);
   }
 }
+
+input_decimal.addEventListener('input', function (){
+  if (is_updating) 
+  return;
+  is_updating = true;
+  const v = input_decimal.value.trim();
+  clear_hints();
+  if (v === '')
+  {
+    input_binary.value = input_octal.value = input_hex.value = '';
+    is_updating = false;
+    return;
+  }
+  if (!re_decimal.test(v))
+  {
+    set_hint(hint_decimal, 'only optional minus and digits 0-9', true);
+    is_updating = false;
+    return;
+  }
+
