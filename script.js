@@ -136,3 +136,6 @@ input_decimal.addEventListener('input', function (){
     return;
   }
 
+   update_all_from_decimal(v);
+  is_updating = false;
+});
