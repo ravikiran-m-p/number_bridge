@@ -139,3 +139,25 @@ input_decimal.addEventListener('input', function (){
    update_all_from_decimal(v);
   is_updating = false;
 });
+
+input_binary.addEventListener('input', function () {
+  if (is_updating)
+    return;
+  is_updating = true;
+  const v = input_binary.value.trim();
+  clear_hints();
+  if (v === '')
+  {
+    input_decimal.value = input_octal.value = input_hex.value = '';
+    is_updating = false;
+    return;
+  }
+  if (!re_binary.test(v))
+  {
+    set_hint(hint_binary, 'only 0 or 1 and optional leading minus', true);
+    is_updating = false;
+    return;
+  }
+  update_all_from_binary(v);
+  is_updating = false;
+});
