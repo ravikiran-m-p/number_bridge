@@ -184,4 +184,24 @@ input_octal.addEventListener('input', function () {
   is_updating = false;
 });
 
+input_hex.addEventListener('input', function () {
+  if (is_updating) 
+    return;
+  is_updating = true;
+  const v = input_hex.value.trim();
+  clear_hints();
+  if (v === '') {
+    input_decimal.value = input_binary.value = input_octal.value = '';
+    is_updating = false;
+    return;
+  }
+  if (!re_hex.test(v)) {
+    set_hint(hint_hex, 'hex digits 0-9 A-F, optional minus', true);
+    is_updating = false;
+    return;
+  }
+  update_all_from_hex(v);
+  is_updating = false;
+});
+
 
