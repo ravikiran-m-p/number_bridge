@@ -1,4 +1,5 @@
-body {
+body
+{
   margin: 0;
   font-family: Arial, sans-serif;
   background-color: #0a0a0a;
@@ -8,14 +9,16 @@ body {
   justify-content: center;
   height: 100vh;
 }
-.panel {
+.panel
+{
   width: 340px;
   padding: 24px;
   border: 1px solid #bfa14a;
   border-radius: 10px;
   background-color: #111;
 }
-.title {
+.title
+{
   text-align: center;
   color: #d4af37;
   margin: 0;
@@ -23,13 +26,15 @@ body {
   letter-spacing: 1px;
 }
 
-.subtitle {
+.subtitle
+{
   text-align: center;
   color: #bfa14a;
   font-size: 12px;
   margin: 6px 0 18px;
 }
-.clear_button {
+.clear_button
+{
   background-color: #d4af37;
   color: #0a0a0a;
   border: none;
@@ -43,19 +48,22 @@ body {
   background-color: #e6c755;
 }
 
-.field {
+.field
+{
   display: flex;
   flex-direction: column;
   margin-bottom: 14px;
 }
 
-.field_label {
+.field_label
+{
   font-size: 13px;
   color: #bfa14a;
   margin-bottom: 4px;
 }
 
-.field_input {
+.field_input
+{
   padding: 8px;
   border: 1px solid #bfa14a;
   border-radius: 6px;
@@ -64,13 +72,15 @@ body {
   font-size: 15px;
 }
 
-.field_input:focus {
+.field_input:focus
+{
   outline: none;
   border-color: #e6c755;
 }
 
 
-.hint {
+.hint
+{
   height: 14px;
   font-size: 11px;
   color: #d4af37;
@@ -81,7 +91,8 @@ body {
   color: #ff6666;
 }
 
-.foot {
+.foot
+{
   display: flex;
   justify-content: center;
   margin-top: 10px;
