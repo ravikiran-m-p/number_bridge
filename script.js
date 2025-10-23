@@ -214,4 +214,13 @@ button_clear.addEventListener('click', function () {
   is_updating = false;
 });
 
+[input_decimal, input_binary, input_octal, input_hex].forEach(function (el) {
+  el.addEventListener('keydown', function (ev) {
+    if (ev.key === 'Enter') {
+      ev.preventDefault();
+      el.select();
+    }
+  });
+});
+
 
