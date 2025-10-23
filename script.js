@@ -207,4 +207,11 @@ input_hex.addEventListener('input', function () {
   is_updating = false;
 });
 
+button_clear.addEventListener('click', function () {
+  is_updating = true;
+  input_decimal.value = input_binary.value = input_octal.value = input_hex.value = '';
+  clear_hints();
+  is_updating = false;
+});
+
 
