@@ -5,10 +5,13 @@ Just type a value in any box — and all others update in real time!
 
 ---
 
-## 🎥 Working Output
 
-You can watch the working demo video here 
-                    |
-                    
-https://github.com/ravikiran-m-p/number_bridge/blob/main/Working_output.mp4?raw=true
+## 🧩 Features
 
+- ⚡ Real-time conversion between **Decimal**, **Binary**, **Octal**, and **Hexadecimal**
+- 🪄 Type in any input box — all others update instantly
+- 🎨 Clean dark theme design
+- 🧮 Accurate large number handling via JavaScript `BigInt`
+- 🧹 One-click clear button to reset all inputs
+
+---
