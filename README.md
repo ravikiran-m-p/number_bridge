@@ -30,7 +30,7 @@ Just type a value in any box — and all others update in real time!
    git clone https://github.com/ravikiran-m-p/number_bridge.git
 
 
-   🧰 Technologies Used
+Technologies Used
 
 HTML5
 
