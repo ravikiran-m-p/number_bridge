@@ -22,3 +22,9 @@ Just type a value in any box — and all others update in real time!
 - Converts values using **BigInt** and updates all other fields immediately.
 
 ---
+
+## How to Run
+
+1. Clone this repository  
+   ```bash
+   git clone https://github.com/ravikiran-m-p/number_bridge.git
