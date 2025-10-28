@@ -7,4 +7,5 @@ Just type a value in any box — and all others update in real time!
 
 ## 🎥 Working Output
 
-<video src="https://github.com/ravikiran-m-p/number_bridge/blob/main/Working_output.mp4?raw=true" controls width="100%"></video>
+You can watch the working demo video here 👇  
+🔗 [▶️ Click to view Working_output.mp4](https://github.com/ravikiran-m-p/number_bridge/blob/main/Working_output.mp4?raw=true)
