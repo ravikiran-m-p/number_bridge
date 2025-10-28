@@ -28,3 +28,12 @@ Just type a value in any box — and all others update in real time!
 1. Clone this repository  
    ```bash
    git clone https://github.com/ravikiran-m-p/number_bridge.git
+
+
+   🧰 Technologies Used
+
+HTML5
+
+CSS3
+
+JavaScript (ES6+, BigInt)
