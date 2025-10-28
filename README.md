@@ -15,3 +15,10 @@ Just type a value in any box — and all others update in real time!
 -  One-click clear button to reset all inputs
 
 ---
+## How It Works
+
+- Uses **JavaScript** event listeners to detect input in any number field.  
+- Validates inputs with **regular expressions** for each base.  
+- Converts values using **BigInt** and updates all other fields immediately.
+
+---
