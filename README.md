@@ -33,8 +33,8 @@ Just type a value in any box — and all others update in real time!
 
 ## Technologies Used
 
-HTML5
+- HTML5
 
-CSS3
+- CSS3
 
-JavaScript (ES6+, BigInt)
+- JavaScript (ES6+, BigInt)
