@@ -37,4 +37,4 @@ Just type a value in any box — and all others update in real time!
 
 - CSS3
 
-- JavaScript (ES6+, BigInt)
+- JavaScript (ES6+)
