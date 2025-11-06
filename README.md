@@ -16,10 +16,13 @@ Just type a value in any box — and all others update in real time!
 
 ---
 ## How It Works
+- Each input box listens for the input event.
 
-- Uses **JavaScript** event listeners to detect input in any number field.  
-- Validates inputs with **regular expressions** for each base.  
-- Converts values using **BigInt** and updates all other fields immediately.
+- The entered value is validated based on its number system.
+
+- The value is converted using JavaScript BigInt.
+
+- All other input fields are updated instantly
 
 ---
 
