@@ -28,7 +28,8 @@ Just type a value in any box — and all others update in real time!
 1. Clone this repository  
    ```bash
    git clone https://github.com/ravikiran-m-p/number_bridge.git
-
+2. Open the Project Folder  : ``` cd number_bridge ```
+3. Run the Web App :
 ---
 
 ## Technologies Used
