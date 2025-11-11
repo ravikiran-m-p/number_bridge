@@ -5,7 +5,6 @@ Just type a value in any box — and all others update in real time!
 
 ---
 
-
 ##  Features
 
 -  Real-time conversion between **Decimal**, **Binary**, **Octal**, and **Hexadecimal**
