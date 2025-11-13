@@ -37,7 +37,5 @@ Just type a value in any box — and all others update in real time!
 ## Technologies Used
 
 - HTML5
-
 - CSS3
-
 - JavaScript (ES6+)
