@@ -44,7 +44,8 @@ body
   cursor: pointer;
 }
 
-.clear_button:hover {
+.clear_button:hover 
+{
   background-color: #e6c755;
 }
 
@@ -87,7 +88,8 @@ body
   margin-top: 3px;
 }
 
-.hint.error {
+.hint.error
+{
   color: #ff6666;
 }
 
