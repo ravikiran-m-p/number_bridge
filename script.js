@@ -118,7 +118,7 @@ function update_all_from_hex(hex_str)
   }
 }
 
-input_decimal.addEventListener('input', function (){
+input_decimal.addEventListener('input', function () {
   if (is_updating) 
   return;
   is_updating = true;
